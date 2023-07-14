@@ -156,6 +156,21 @@ p{
     border-bottom: 1px solid gray;  
 }
 
-.searchForm{
+.searchForm input{
+    font-size: 16px;
+    padding: 5px;
+}
+.userChat{
+    display: flex;
+    padding: 10px;
+}
+.userChat img{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.userChatInfo{
     
 }
