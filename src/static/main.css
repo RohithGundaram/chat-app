@@ -4,6 +4,16 @@
     text-decoration: none;
     outline: none;
 }
+
+input{
+    border: none;
+    outline: none;
+
+}
+input:focus{
+    border: none;
+    outline: none;
+}
 .formContainer{
     display: flex;
     background-color: #a2f6fc;
@@ -83,4 +93,74 @@ p{
 .avatar{
     width: 35px;
     margin-right: 10px;
+}
+
+
+.home{
+    background-color: brown;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.container{
+    background-color: #5d5b8d;
+    display: flex;
+    height:80%;
+    width: 65%;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.sidebar{
+    background-color: antiquewhite;
+    padding: 10px;
+    flex: 1;
+
+}
+.chat{
+    background-color: aqua;
+    flex: 2;
+}
+.navbar{
+
+    background-color: rgb(239, 65, 190);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.navbar img{
+    width: 30px;
+    border-radius: 50%;
+
+}
+.one{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+.two{
+    background-color: #ef0823;
+    display: flex;
+    align-items: center;
+
+}
+.two button{
+    
+    font-size: 15px;
+
+
+}
+.search{
+    padding: 5px;
+    background-color: rgb(2, 83, 56);       
+
+}
+.search input{
+    
 }

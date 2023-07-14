@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Login = () => {
   return (
     <div className='formContainer'>
@@ -14,7 +14,7 @@ const Login = () => {
           </form>
         </div>
         <div>
-          <p>Don't have an account? Register</p>
+          <p>Don't have an account? <Link to='/signup'>Register</Link></p>
         </div>
       </div>
     </div>

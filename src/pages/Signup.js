@@ -1,5 +1,6 @@
 import React from 'react'
 import Add from "../static/images/addAvatar.png"
+import { Link } from 'react-router-dom'
 const Signup = () => {
   return (
     <div className='formContainer'>
@@ -20,7 +21,7 @@ const Signup = () => {
           </form>
         </div>
         <div>
-          <p>You do have an account? Login</p>
+          <p>You do have an account? <Link to='/'>Login</Link></p>
         </div>
       </div>
     </div>
