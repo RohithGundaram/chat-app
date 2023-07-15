@@ -209,9 +209,88 @@ color: black;
 .messages{
     background-color: rgb(137, 199, 253);
     padding: 10px;
+    height: calc(100% - 120px);
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .input{
     height: 50px;
     background-color: rgb(243, 248, 248);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input input{
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.send{
+    display: flex;
+    /* padding: 5px 10px; */
+    align-items: center;
+    gap: 10px;
+}
+
+.send img{
+    height: 24px;
+    cursor: pointer;
+}
+
+.message{
+    display: flex;
+    gap: 20px;
+}
+
+.owner{
+    flex-direction: row-reverse;
+}
+
+.message p{
+    background-color: #5d5b8d;
+    color: white;
+    border-radius: 10px 0 10px 10px;
+}
+
+.owner .messageContent{
+    align-items: flex-end;
+}
+
+.messageInfo{
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.messageInfo span{
+    font-size: 16px;
+}
+
+.messageInfo  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.messageContent{
+    max-width: 80%;
+}
+
+.messageContent p{
+    background-color: #ffffff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 0 10px 10px 10px;
+    max-width: max-content;
+}
+
+.messageContent img{
+    width: 50%;
 }
