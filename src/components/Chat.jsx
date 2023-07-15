@@ -4,6 +4,7 @@ import add from '../static/images/add.png'
 import more from '../static/images/more.png'
 import Messages from './Messages'
 import Input from './Input'
+
 const Chat = () => {
   return (
     <div className='chat'>
@@ -15,8 +16,8 @@ const Chat = () => {
           <img src={more} alt="more" />
         </div>
       </div>
-      <Messages></Messages>
-      <Input></Input>
+      <Messages/>
+      <Input/>
     </div>
   )
 }

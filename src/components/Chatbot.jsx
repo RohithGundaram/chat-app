@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Message = () => {
+const Chatbot = () => {
   return (
     <div>
-      Message
+      
     </div>
   )
 }
 
-export default Message
+export default Chatbot
