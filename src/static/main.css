@@ -105,16 +105,26 @@ p{
 .container{
     background-color: #5d5b8d;
     display: flex;
-    height:80%;
-    width: 70%;
-    border-radius: 10px;
-    overflow: hidden;
+    height:100%;
+    width: 100%;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
 }
 .sidebar{
     background-color: antiquewhite;
     /* padding: 10px; */
     width: 30%;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+.chats{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 72%;
+}
+
 .chat{
     background-color: aqua;
     width: 70%;
@@ -246,17 +256,19 @@ color: black;
     gap: 20px;
 }
 
-.owner{
-    flex-direction: row-reverse;
-}
-
 .message p{
     background-color: #5d5b8d;
     color: white;
     border-radius: 10px 0 10px 10px;
 }
 
-.owner .messageContent{
+.owner{
+    flex-direction: row-reverse;
+}
+
+.owner .messageContent {
+    display: flex;
+    flex-direction: column;
     align-items: flex-end;
 }
 
