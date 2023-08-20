@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { auth, storage, db } from '../firebaseConfig';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { doc,setDoc} from 'firebase/firestore'
 
 const Signup = () => {
   const [err, setErr] = useState(false);
@@ -42,7 +43,7 @@ const Signup = () => {
           });
         }
       );
-
+          await setDoc(doc)
     }
     catch (err) {
       setErr(true)
